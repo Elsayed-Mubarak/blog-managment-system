@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authers",
+  "info": {
+    "name": "auther"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "information": {
+      "type": "richtext"
+    },
+    "articles": {
+      "via": "auther",
+      "collection": "article"
+    },
+    "comments": {
+      "via": "auther",
+      "collection": "comment"
+    }
+  }
+}
