@@ -1,6 +1,6 @@
 FROM strapi/base
 
-WORKDIR /usr/src/api
+WORKDIR /usr/src/ubuntu/sayedmubarak/strapi/blog-managment-system
 
 COPY package*.json ./
 
